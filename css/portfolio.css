@@ -7,3 +7,45 @@
 html:not(.js) .expertise-select{display:none}
 @media(max-width:540px){.lead-card h2 em{margin-left:.15em}}
 body:has(.document-page) .brand{display:block}
+
+/* V7: editorial portrait, credible contact and restrained midnight stage. */
+:root{--black:#090b10;--charcoal:#2d3038;--serif:'Playfair Display',Georgia,serif}
+body{background:var(--black)}
+.hero{background:#11141b;min-height:720px;padding-bottom:260px}
+.hero:before{background:radial-gradient(ellipse at 18% 25%,#42424a77,transparent 52%),linear-gradient(115deg,#1c202b,#0c0f16);filter:blur(40px)}
+.hero:after{background:linear-gradient(90deg,#0b0e15aa,#0b0e1555);box-shadow:inset 0 0 80px #080b11aa}
+.hero .lead-card{background:#141821;border-color:#b78d6a55;padding:30px}
+.hero-focus{padding-left:20px;color:var(--muted);font-size:12px;line-height:2.5;margin-bottom:30px}
+.hero .lead-intro{font-size:13px;line-height:1.8}.hero .growth-sculpted{height:210px}
+.about{grid-template-columns:minmax(250px,380px) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:center}
+.portrait-frame{margin:0;max-width:380px}.portrait-frame img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:8px;border:1px solid #b78d6a44}
+.portrait-frame figcaption{font-size:9px;letter-spacing:1.3px;color:var(--muted);margin-top:15px}
+.about>.about-copy{padding:0}.about .large-copy{font-size:23px;line-height:1.65}.about h2{font-size:clamp(34px,3.5vw,52px)}
+.contact-explore{justify-content:center;margin-top:30px}.contact .note{font-size:12px}
+.header nav a,.card-actions a,.text-link{min-height:44px;align-items:center}.card-actions a{display:inline-flex}
+:focus-visible{outline:2px solid var(--ivory);outline-offset:5px}.article-section a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1100px){.hero{min-height:760px}.hero .lead-card{width:280px}.hero .hero-copy{max-width:calc(100% - 320px)}}
+@media(max-width:800px){.hero{min-height:0;padding-bottom:225px}.hero .hero-copy{max-width:100%}.hero .lead-card{width:100%;position:relative;top:auto;right:auto;margin-top:35px}.about{grid-template-columns:1fr}.portrait-frame{width:min(100%,360px)}.hero .growth-sculpted{height:175px}}
+@media(max-width:540px){.hero{padding-bottom:175px}.hero .growth-sculpted{height:145px}.about .large-copy{font-size:21px}.header .brand{font-size:23px}.header .brand small{font-size:6px}.hero .eyebrow{font-size:8px}.hero-focus{font-size:13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.curves path{stroke-dashoffset:0}.reveal-pending{opacity:1;transform:none}}
+
+.library-grid .insight-card h2{font:26px/1.3 var(--serif);margin:0 0 20px;letter-spacing:-.4px}
+
+/* V7.1: verified contact channels; form remains outside the published build. */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px 60px;text-align:left;align-items:start}
+.contact .contact-intro h2{font-size:clamp(38px,4.4vw,66px);max-width:650px;line-height:1.13}
+.contact .contact-description{font-size:15px;color:var(--muted);max-width:540px;margin-bottom:28px}
+.contact-helper{font-size:12px;color:var(--muted);margin-top:16px}
+.contact-channel-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding-top:10px;min-width:0}
+.contact-channel{display:flex;flex-direction:column;gap:14px;border:1px solid #b78d6a44;border-radius:10px;padding:24px 20px;min-width:0;background:#12151c;transition:border-color .2s,background .2s}
+.contact-channel:hover{border-color:#b78d6a;background:#191c24}.channel-label{color:#c7a789;font-size:9px;letter-spacing:1.8px;display:flex;justify-content:space-between;gap:10px}
+.contact-channel strong{font-size:13px;font-weight:500;overflow-wrap:anywhere;line-height:1.7}.channel-description{color:var(--muted);font-size:11px;line-height:1.8}
+.contact .contact-privacy{grid-column:1/-1;color:var(--muted);font-size:11px;line-height:1.8;max-width:880px;margin:0;padding-top:22px;border-top:1px solid #b78d6a33}
+@media(max-width:1100px){.contact{gap:32px;grid-template-columns:1fr}.contact-channel-grid{max-width:850px}.contact .contact-intro h2{max-width:720px}}
+@media(max-width:540px){.contact-channel-grid{grid-template-columns:1fr}.contact .contact-intro h2{font-size:39px}.contact-primary{width:100%;justify-content:space-between}.contact-channel{padding:23px}.contact-channel strong{font-size:15px}}
+
+/* V7.2: accessible enquiry, clearly awaiting delivery activation. */
+.inquiry-panel{grid-column:1/-1;border:1px solid #b78d6a44;border-radius:12px;background:#12151c;padding:clamp(24px,4vw,48px);min-width:0}
+.inquiry-heading{max-width:680px}.inquiry-heading h3{font-size:36px;margin:12px 0 18px}.inquiry-heading p{font-size:13px;color:var(--muted)}.inquiry-heading a,.inquiry-privacy a{text-decoration:underline;text-underline-offset:4px;color:var(--ivory)}
+.inquiry-fields{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0}.inquiry-field{display:flex;flex-direction:column;gap:8px;min-width:0}.inquiry-field label{font-size:13px;color:var(--ivory)}.inquiry-field input,.inquiry-field select,.inquiry-field textarea{width:100%;min-height:48px;background:#090b10;border:1px solid #7a6d60;border-radius:5px;color:var(--ivory);font:14px/1.6 var(--sans);padding:12px;max-width:100%}.inquiry-field textarea{resize:vertical}.inquiry-wide{grid-column:1/-1}.field-error{color:#ffb5a4;font-size:12px}.field-error:empty{display:none}.field-help,.inquiry-privacy{font-size:12px;color:var(--muted)}[aria-invalid=true]{border-color:#ffb5a4!important}.inquiry-consent{display:flex;align-items:start;gap:12px;font-size:13px;max-width:700px;min-height:44px}.inquiry-consent input{width:20px;height:20px;flex:none;accent-color:#b78d6a}.inquiry-privacy{max-width:850px;margin:24px 0}.inquiry-status{font-size:13px;color:var(--ivory);margin:16px 0 0}.inquiry-panel button:disabled{opacity:.55;cursor:not-allowed;transform:none}.spam-trap{display:none}.inquiry-panel .eyebrow{color:#e2c29e}
+@media(max-width:540px){.inquiry-fields{grid-template-columns:1fr;gap:20px}.inquiry-heading h3{font-size:30px}.inquiry-panel{padding:24px 18px}.inquiry-panel .button{width:100%;justify-content:center}.inquiry-field input,.inquiry-field select,.inquiry-field textarea{font-size:16px}}
